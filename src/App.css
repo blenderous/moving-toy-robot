@@ -1,0 +1,36 @@
+#root {
+  min-width: 492px;
+}
+
+.ToyBot__controls--dashboard input {
+  display: inline-block;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.ToyBot__controls--dashboard select {
+  width: 120px;
+  margin-right: 10px;
+}
+
+.ToyBot__controls--dashboard label {
+  margin-right: 10px;
+}
+
+.ToyBot__controls--dashboard > form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.ToyBot__controls--dashboard > form > button {
+  flex-grow: 1;
+}
+
+.ToyBot__controls--dashboard button {
+  text-transform: uppercase;
+}
+
+.ToyBot__controls--dashboard > button {
+  display: block;
+  width: 100%;
+}
