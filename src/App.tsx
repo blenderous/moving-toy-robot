@@ -2,7 +2,7 @@ import { useRef, useState } from "react"
 import { FaRobot } from "react-icons/fa6"
 import "bootstrap/dist/css/bootstrap.css"
 import "./App.css"
-import CodeEditor from "./components/CodeEditor"
+// import CodeEditor from "./components/CodeEditor"
 
 function App() {
   const [xValue, setxValue] = useState<number>(0)
