@@ -2,6 +2,7 @@ import { useRef, useState } from "react"
 import { FaRobot } from "react-icons/fa6"
 import "bootstrap/dist/css/bootstrap.css"
 import "./App.css"
+import CodeEditor from "./components/CodeEditor"
 
 function App() {
   const [xValue, setxValue] = useState<number>(0)
@@ -114,32 +115,9 @@ function App() {
         </span>
       </h1>
       <div className="ToyBot">
-        {/* <div className="ToyBot__controls--code-editor">
-          <h2>Type it out</h2>
-          <form className="mb-4">
-            <div className="mb-3">
-              <label
-                htmlFor="codeExecutionArea"
-                className="form-label"
-              >
-                Write code here
-              </label>
-              <textarea
-                className="form-control"
-                id="codeExecutionArea"
-                rows={3}
-              ></textarea>
-            </div>
-            <button
-              type="submit"
-              className="btn btn-primary"
-            >
-              Execute
-            </button>
-          </form>
-        </div> */}
+        <CodeEditor/>
         <div className="ToyBot__controls--dashboard mb-4">
-          {/* <h2>Or use controls</h2> */}
+          <h2>Or use controls</h2>
           <form
             className="mb-2"
             onSubmit={onPlaceSubmit}
@@ -159,7 +137,6 @@ function App() {
               placeholder="0"
               value={inputxValue}
               onChange={(e) => setInputxValue(parseInt(e.target.value))}
-              // ref={xValueRef}
             ></input>
             <label
               htmlFor="placeControlY"
@@ -176,7 +153,6 @@ function App() {
               placeholder="0"
               value={inputYValue}
               onChange={(e) => setInputYValue(parseInt(e.target.value))}
-              // ref={yValueRef}
             ></input>
             <select
               className="form-select"
