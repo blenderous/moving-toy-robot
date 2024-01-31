@@ -115,9 +115,9 @@ function App() {
         </span>
       </h1>
       <div className="ToyBot">
-        <CodeEditor/>
+        {/* <CodeEditor/> */}
         <div className="ToyBot__controls--dashboard mb-4">
-          <h2>Or use controls</h2>
+          {/* <h2>Or use controls</h2> */}
           <form
             className="mb-2"
             onSubmit={onPlaceSubmit}
