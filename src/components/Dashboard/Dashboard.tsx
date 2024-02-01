@@ -131,7 +131,6 @@ const Dashboard = () => {
               max="4"
               className="form-control"
               id="placeControlX"
-              data-testid="xValueInput"
               placeholder="0"
               value={inputxValue}
               onChange={(e) => setInputxValue(parseInt(e.target.value))}
@@ -157,6 +156,7 @@ const Dashboard = () => {
               aria-label="Direction"
               ref={directionRef}
               defaultValue={"North"}
+              data-testid="direction"
             >
               <option value="North">NORTH</option>
               <option value="South">SOUTH</option>
@@ -200,12 +200,14 @@ const Dashboard = () => {
             <p
               className="alert alert-danger"
               role="alert"
+              data-testid="error-alert"
             >
               Oops! Can't move!
             </p>
           )}
           { showOutput && <p
             className="alert alert-primary"
+            data-testid="output"
             role="alert"
           >
             {xValue + "," + yValue + "," + direction.toUpperCase()}
